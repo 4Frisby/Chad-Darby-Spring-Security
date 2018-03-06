@@ -54,9 +54,21 @@
 	</dependencies>
 
 	<!-- TO DO: Add support for Maven WAR Plugin -->
-	<!-- Maven searchs for web.xml which is the web project configuration file.
-		 but can't find it, in order to tell it we will configure with hard-coded java files we 
-		 need to import maven war plug-in. -->
+
+	<build>
+		<finalName>spring-security-demo</finalName>
+	
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<!-- Add Maven coordinates (GAV) for: maven-war-plugin -->
+				    <groupId>org.apache.maven.plugins</groupId>
+				    <artifactId>maven-war-plugin</artifactId>
+				    <version>3.2.0</version>					
+				</plugin>						
+			</plugins>
+		</pluginManagement>
+	</build>
 
 
 </project>
