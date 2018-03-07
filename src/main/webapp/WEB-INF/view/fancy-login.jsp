@@ -90,7 +90,8 @@
 						</div>
 
 						<!-- I'm manually adding tokens ... Bro! -->
-
+						<!-- If you don't use form:form tag which is a spring framework security tag 
+						configures csrf token auth automatically you have to use something like below.  -->
 						<input type="hidden"
 							   name="${_csrf.parameterName}"
 							   value="${_csrf.token}" />
