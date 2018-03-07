@@ -23,7 +23,6 @@
 	
 		<!-- Check for login error -->
 	
-		<!-- Spring returns same url with added ?error=<msg content> from auth process. -->
 		<c:if test="${param.error != null}">
 		
 			<i class="failed">Sorry! You entered invalid username/password.</i>
